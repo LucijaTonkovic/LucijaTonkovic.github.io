@@ -1,0 +1,386 @@
+/* CSS reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*MY CSS */
+
+@font-face {
+    src: url("../Fonts/Distant_Stroke_Medium.otf");
+    font-family: Signature;
+}
+
+html{
+    font-family: "Lato", Helvetica, sans-serif;
+}
+
+.Menu_title{
+    float: left;
+    font-size: 60px;
+    font-family: Signature;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.box{
+    display: flex;
+    float: right;
+    min-width: 600px;
+    font-size: 30px;
+    justify-content: space-between;
+
+}
+
+.Main_part{
+    box-sizing: border-box;
+    clear: both;
+    padding: 40px;
+    padding-top: 110px;
+    height: 740px;
+    line-height: 40px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+#my_picture{
+    float: right;
+    margin-right: 150px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+#card{
+    border: 1px solid lightgray;
+    width:800px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+#greeting{
+    box-sizing: border-box;
+    padding-top: 70px;
+    font-size: 35px;
+}
+
+#intro{
+    box-sizing: border-box;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 1000px;
+}
+
+#intro h1{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+nav{
+    height: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #ff9484;
+    color: azure;
+    box-shadow: 0px 6px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 92%;
+    position: fixed;
+    top: 0;
+}
+
+footer{
+    <!--height: 10px;-->
+    box-sizing: border-box;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #ff9484;
+    font-size: 18px;
+    text-align: center;
+    color: azure;
+
+}
+
+.social{
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.social li{
+    margin-right: 40px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #ff9484;
+}
+
+.selected{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    transition: color .5s ease-in-out;
+}
+
+i{
+    transition: color .4s ease-in-out;
+}
+
+a:hover, i:hover{
+    color: rgb(227, 107, 119);
+}
+
+.heading{
+    font-size: 35px;
+    padding-left: 120px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ff9484;
+    text-decoration: underline;
+}
+
+#education{
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding-left: 120px;
+    width: 800px;
+    float: left;
+    margin-right: 200px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+    grid-template-rows: auto;
+    justify-content: center;
+    grid-gap: 40px;
+    font-size: 22px;
+    line-height: 25px;
+    margin-top:60px;
+    margin-bottom: 40px;
+}
+
+#first_column, #second_column, #third_column{
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.flex_element{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+i{
+    color: #ff9484;
+    margin-right: 10px;
+}
+
+.highlight{
+    font-weight: bold;
+    text-decoration: underline;
+    line-height: 50px;
+}
+
+.description{
+    padding-left: 120px;
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.text_box{
+    width: 800px;
+}
+
+.subheading{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#hobbies{
+    margin-right: 200px;
+}
+
+#drawing{
+    float: left;
+    margin-right: 0px;
+}
+
+#dtext_box{
+    width: 700px;
+    float: right;
+    margin-top: 65px;
+    margin-right: 60px;
+}
+
+#drawing_desc{
+    overflow: hidden;
+}
+
+#game{
+    float: right;
+    margin-right: 220px;
+    margin-top: 40px;
+}
+
+#gtext_box{
+    width: 800px;
+    margin-bottom: 150px;
+    margin-top: 2px;
+}
+
+#montage{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#question{
+    padding-left: 120px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+fieldset{
+    width: 1500px;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    height: 400px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:"FirstName Message"
+                        "LastName Message"
+                        "Email Message"
+                        "Submit Submit";
+}
+
+#FirstName{
+    grid-area: FirstName;
+}
+
+#LastName{
+    grid-area: LastName;
+}
+
+#Message{
+    grid-area: Message;
+}
+
+#button{
+    grid-area: Submit;
+    width: 400px;
+    height: 40px;
+    background-color: #ff9484;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-size: 20px;
+    transition: background-color .4s ease-in-out;
+}
+
+#button:hover{
+    background-color: rgb(227, 107, 119);
+}
+
+#cheading{
+    margin-bottom: 40px;
+}
+
+label{
+    font-size: 25px;
+}
+
+#FirstName input, #LastName input, #Email input, textarea{
+    margin-top: 10px;
+    width: 95%;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+}
+
+textarea{
+    padding-top: 10px;
+    height: 77%;
+}
+
+hr{
+    margin-bottom: 100px;
+}
